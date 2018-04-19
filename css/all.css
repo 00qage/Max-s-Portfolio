@@ -175,6 +175,26 @@ body {
     text-align: center; }
   .portfolio ul li {
     margin: 0 30px 1% 1%; }
+    .portfolio ul li .box {
+      height: 220px;
+      overflow: hidden;
+      position: relative; }
+      .portfolio ul li .box .box-i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transition: top .5s;
+        -o-transition: top .5s;
+        transition: top .5s; }
+        .portfolio ul li .box .box-i:hover {
+          top: -140px; }
+      .portfolio ul li .box .box-detail {
+        text-align: center; }
+        .portfolio ul li .box .box-detail h3 {
+          margin-bottom: 0.5rem; }
+        .portfolio ul li .box .box-detail p {
+          line-height: 1.5;
+          margin-bottom: 1rem; }
     .portfolio ul li img {
       max-width: 100%;
       height: 200px;

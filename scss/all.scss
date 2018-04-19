@@ -205,6 +205,36 @@ body {
     ul {
         li {
             margin: 0 30px 1% 1%;
+            .box {
+                // width: 350px;
+                height: 220px;
+                overflow: hidden;
+                position: relative;
+                .box-i {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: top .5s;
+                    &:hover {
+                        top: -140px;
+                    }
+                }
+                .box-img{
+                    // width: 300px;
+                    // height: 140px;
+                }
+                .box-detail{
+                    text-align: center;
+                    h3{
+                        
+                        margin-bottom: 0.5rem;
+                    }
+                    p{
+                        line-height: 1.5;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
             img {
                 max-width: 100%;
                 height: 200px;
