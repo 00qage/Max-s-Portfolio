@@ -76,7 +76,8 @@ $('.scrollTop').click(function(e){
         $(this).animate({height:thisValue+'%'},1000);
       });
     }
-
+    // contact
+    
 
 });
 });

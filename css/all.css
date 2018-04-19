@@ -190,7 +190,13 @@ body {
 
 .contact {
   height: 1000px;
-  background: blue; }
+  background: #123d5f; }
+  .contact .contact-list i {
+    padding-right: 10px; }
+  .contact .contact-list p {
+    font-size: 20px; }
+  .contact .contact-form .contact-form-button {
+    margin-top: 10px; }
 
 .footer {
   height: 70px;
