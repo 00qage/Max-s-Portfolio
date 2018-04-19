@@ -1,0 +1,229 @@
+@import "reset";
+@import "grid";
+// color
+$brand-accent: #ffc14e;
+// progress
+$progress-height: 30px;
+body {
+    font-family: 微軟正黑體;
+    li {
+        list-style-type: none;
+    }
+}
+
+// extend
+%all-h1 {
+    // font-size: 18px;
+    color: aqua;
+}
+
+// .wrap {
+// max-width: 100%;
+// background: rgb(235, 235, 235);
+// }
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    .h7 {
+        height: 70px;
+    }
+    .bg-info {
+        opacity: 0.8;
+    }
+    .header-box {
+        width: 1024px;
+        height: 70px;
+        .name {
+            font-size: 20px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-menu {
+    ul {
+        li {
+            a {
+                color: #fff;
+                text-decoration: none;
+                padding: 24.5px;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: rgba(black, .05);
+                }
+                &.active {
+                    box-shadow: 0 -3px 0 $brand-accent inset;
+                }
+            }
+        }
+    }
+}
+
+//secton start
+.section {
+    // height: 6000px;
+    // width: 1000px;
+}
+
+.section-img {
+    overflow: hidden;
+    height: 1000px;
+    width: 100%;
+    background: url("images/landscape1.jpg"); // background:url(https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?dpr=2&auto=format&fit=crop&w=450&h=750&q=50&cs=tinysrgb&crop=);
+    // background:url("images/StockSnap_JBZCLRFT3A.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    .section-img-maintitle {
+        width: 100%;
+        padding: 20px 0;
+        background: rgba(255, 255, 255, 0.7);
+        .maintitle {
+            color: rgb(18, 61, 95);
+            font-size: 100px;
+            text-align: center;
+            text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.about {
+    padding: 100px;
+    background: rgb(255, 255, 255);
+    .about-title {
+        text-align: center;
+        color: rgb(18, 61, 95);
+        font-size: 50px;
+    }
+    .about-content {
+        width: 50%;
+        color: rgb(18, 61, 95);
+        margin-top: 50px;
+    }
+}
+
+.skills {
+    padding: 100px;
+    background: rgb(207, 223, 234);
+    i {
+        // font-size: 18px;
+        padding-right: 5px;
+    }
+    .skills-chart {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-left: 2px solid #777;
+        border-bottom: 2px solid #777;
+        box-sizing: border-box;
+        .skills-chart-grid {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            box-sizing: border-box;
+            border: 1px dotted #777;
+            .skills-chart-grid-level {
+                font-weight: 900; // letter-spacing: -2px;
+                color: #777;
+                margin: -12px 0 0 -100px;
+            }
+        }
+        .skills-chart-bar {
+            position: absolute;
+            width: 6%;
+            bottom: 0;
+            background: linear-gradient($brand-accent, #ce7f00);
+            .skills-chart-bar-title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: white;
+                transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+            }
+        }
+    } // .skills-progress-y {
+    //     width: 30px;
+    //     height: 300px;
+    //     bottom: 0;
+    //     overflow: hidden;
+    //     background-color: rgba(#fafafa, .45);
+    //     border-radius: 3px;
+    //     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    //     position: relative;
+    //     .skills-progress-bar-y {
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         bottom: 0;
+    //         height: 0;
+    //         width: 30px;
+    //         font-size: 12px;
+    //         line-height: 30px;
+    //         color: #fff;
+    //         text-align: center;
+    //         background-color: $brand-accent;
+    //         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    //         transition: Height 1s ease;
+    //     }
+    // }
+    .skills-progress {
+        height: $progress-height;
+        overflow: hidden;
+        background-color: rgba(#fafafa, .45);
+        border-radius: 3px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+        position: relative;
+        .skills-progress-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            font-size: 12px;
+            line-height: $progress-height;
+            color: #fff;
+            text-align: center;
+            background-color: $brand-accent;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+            transition: width 1s ease;
+        }
+    }
+}
+
+.portfolio {
+    padding: 100px;
+    background: rgb(18, 61, 95);
+    h2 {
+        text-align: center;
+    }
+    ul {
+        li {
+            margin: 0 30px 1% 1%;
+            img {
+                max-width: 100%;
+                height: 200px;
+                transition:all .5s  ;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                    box-shadow:2px 2px 5px rgb(41, 41, 41);
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    height: 1000px;
+    background: blue;
+}
+
+.footer {
+    height: 70px;
+    background: #000;
+}
