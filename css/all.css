@@ -198,6 +198,21 @@ body {
   .contact .contact-form .contact-form-button {
     margin-top: 10px; }
 
+.animated {
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px); }
+
+.fadeIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
+
 .footer {
   height: 70px;
   background: #000; }

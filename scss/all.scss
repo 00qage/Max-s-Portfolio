@@ -147,31 +147,7 @@ body {
                 transform: translateX(-50%) translateY(-50%) rotate(-90deg);
             }
         }
-    } // .skills-progress-y {
-    //     width: 30px;
-    //     height: 300px;
-    //     bottom: 0;
-    //     overflow: hidden;
-    //     background-color: rgba(#fafafa, .45);
-    //     border-radius: 3px;
-    //     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
-    //     position: relative;
-    //     .skills-progress-bar-y {
-    //         position: absolute;
-    //         left: 0;
-    //         top: 0;
-    //         bottom: 0;
-    //         height: 0;
-    //         width: 30px;
-    //         font-size: 12px;
-    //         line-height: 30px;
-    //         color: #fff;
-    //         text-align: center;
-    //         background-color: $brand-accent;
-    //         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-    //         transition: Height 1s ease;
-    //     }
-    // }
+    } 
     .skills-progress {
         height: $progress-height;
         overflow: hidden;
@@ -236,6 +212,17 @@ body {
         }
     }
 }
+// animated
+.animated {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateY(50px);
+  }
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 .footer {
     height: 70px;
