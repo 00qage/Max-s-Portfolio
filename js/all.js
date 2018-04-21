@@ -44,10 +44,10 @@ $(document).ready(function () {
         $(this).css('width', thisValue + '%');
       });
 
-      $('#skills .skills-progress-bar-y').each(function () {
-        let thisValue = $(this).data('progress');
-        $(this).css('height', thisValue + '%');
-      });
+      // $('#skills .skills-progress-bar-y').each(function () {
+      //   let thisValue = $(this).data('progress');
+      //   $(this).delay(5000).css('height', thisValue + '%');
+      // });
 
       $('#skills .skills-chart-bar').each(function () {
         let thisValue = $(this).data('progress');
@@ -56,7 +56,7 @@ $(document).ready(function () {
         }, 1000);
       });
     }
-    // contact
+
     // animated
     $('.animated').each(function () {
       var thisPos = $(this).offset().top;

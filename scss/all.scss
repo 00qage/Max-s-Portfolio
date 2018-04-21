@@ -195,8 +195,12 @@ body {
 }
 
 .contact {
-    height: 1000px;
-    background: rgb(18, 61, 95);
+    padding: 100px;
+    background: rgb(12, 39, 59);
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+    }
     .contact-list{
         // color: #fff
         i{

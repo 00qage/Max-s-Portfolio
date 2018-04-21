@@ -189,8 +189,11 @@ body {
         box-shadow: 2px 2px 5px #292929; }
 
 .contact {
-  height: 1000px;
-  background: #123d5f; }
+  padding: 100px;
+  background: #0c273b; }
+  .contact h2 {
+    text-transform: uppercase;
+    text-align: center; }
   .contact .contact-list i {
     padding-right: 10px; }
   .contact .contact-list p {
