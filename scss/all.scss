@@ -20,15 +20,19 @@ body {
 .wrap {
     // margin: 0 auto;
 }
+
 .header {
     position: fixed;
     width: 100%;
-    // right: 0;
-    // left: 0;
     z-index: 10;
     opacity: 0.8;
+    @include iphone {
+        position: absolute;
+        padding: 0 20px;
+        border-bottom:1px solid #fff;
+    }
     .header-box {
-        max-width:1024px;
+        max-width: 1024px;
         height: 70px;
         .name {
             font-size: 20px;
@@ -38,14 +42,51 @@ body {
         }
     }
 }
-
+//hamburger menu
+.menu-show .d-md-flex{
+    max-height: 260px;
+}
 .header-menu {
+    .header-menu-hamburger-icon {
+        display: none;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 4px;
+        width: 40px;
+        height: 40px;
+        line-height: 43px;
+        text-align: center;
+        @include iphone {
+            display: inline-block;
+        }
+        i {
+            color: #fff;
+            font-size: 25px;
+        }
+    }
     ul {
+        @include iphone {
+            max-height: 260px;
+            overflow: hidden;
+            transition: max-height .6s;
+            // margin-top: 1px;
+            position: absolute;
+            z-index: 1;
+            top: 71px;
+            left: 0;
+            right: 0;
+            float: right;
+            display: none;
+            border-bottom:1px solid #fff;
+        }
         li {
             a {
                 color: #fff;
                 text-decoration: none;
                 padding: 24.5px;
+                @include iphone {
+                    display: block;
+                    text-align: center;
+                }
                 &:hover,
                 &:active,
                 &:focus {
@@ -68,12 +109,16 @@ body {
 .section-img {
     overflow: hidden;
     height: 1000px;
-    width: 100%;
+    // width: 100%;
     background: url("images/landscape1.jpg"); // background:url(https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?dpr=2&auto=format&fit=crop&w=450&h=750&q=50&cs=tinysrgb&crop=);
     // background:url("images/StockSnap_JBZCLRFT3A.jpg");
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+    @include iphone{
+        // height: 100%;
+
+    }
     .section-img-maintitle {
         width: 100%;
         padding: 20px 0;
@@ -142,7 +187,7 @@ body {
                 transform: translateX(-50%) translateY(-50%) rotate(-90deg);
             }
         }
-    } 
+    }
     .skills-progress {
         height: $progress-height;
         overflow: hidden;
@@ -175,14 +220,14 @@ body {
     }
     ul {
         li {
-            margin: 0 30px 1% 1%;
+            margin: 0 1% 30px 1%;
             img {
                 max-width: 100%;
                 height: 200px;
-                transition:all .5s  ;
-                &:hover{
-                    transform: scale(1.1,1.1);
-                    box-shadow:2px 2px 5px rgb(41, 41, 41);
+                transition: all .5s;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    box-shadow: 2px 2px 5px rgb(41, 41, 41);
                 }
             }
         }
@@ -191,38 +236,38 @@ body {
 
 .contact {
     padding: 100px;
-    background: rgb(12, 39, 59);
-    // background: url('https://subtlepatterns.com/patterns/restaurant_icons.png') ;
-    h2{
+    background: rgb(12, 39, 59); // background: url('https://subtlepatterns.com/patterns/restaurant_icons.png') ;
+    h2 {
         text-transform: uppercase;
         text-align: center;
     }
-    .contact-list{
+    .contact-list {
         // color: #fff
-        i{
+        i {
             padding-right: 10px;
         }
-        p{
+        p {
             font-size: 20px;
         }
     }
-    .contact-form{
-        .contact-form-button{
+    .contact-form {
+        .contact-form-button {
             margin-top: 10px;
         }
     }
 }
+
 // animated
 .animated {
     opacity: 0;
     transition: all 1.5s;
     transform: translateY(50px);
-  }
-  .fadeIn {
+}
+
+.fadeIn {
     opacity: 1;
     transform: translateY(0);
-  }
-
+}
 
 .footer {
     height: 70px;

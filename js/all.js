@@ -1,6 +1,13 @@
 $(document).ready(function () {
 
+  //hamburger manu
+$('#hamburgermanu').click(function (e) { 
+  e.preventDefault();
+  // $('body').delay(500).toggleClass('menu-show');
+  $('.header-menu ul').slideToggle(600);
+});
 
+//scroll
   var showSkill = false;
 
   $('.scrollTop').click(function (e) {
