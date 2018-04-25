@@ -17,23 +17,18 @@ body {
     color: aqua;
 }
 
-// .wrap {
-// max-width: 100%;
-// background: rgb(235, 235, 235);
-// }
+.wrap {
+    // margin: 0 auto;
+}
 .header {
     position: fixed;
-    right: 0;
-    left: 0;
+    width: 100%;
+    // right: 0;
+    // left: 0;
     z-index: 10;
-    .h7 {
-        height: 70px;
-    }
-    .bg-info {
-        opacity: 0.8;
-    }
+    opacity: 0.8;
     .header-box {
-        width: 1024px;
+        max-width:1024px;
         height: 70px;
         .name {
             font-size: 20px;
