@@ -140,21 +140,6 @@ body {
         .section-img .section-img-maintitle .maintitle {
           font-size: 50px; } }
 
-.about {
-  padding: 100px;
-  background: white; }
-  @media (max-width: 568px) {
-    .about {
-      padding: 20px; } }
-  .about .about-title {
-    text-align: center;
-    color: #123d5f;
-    font-size: 50px; }
-  .about .about-content {
-    width: 50%;
-    color: #123d5f;
-    margin-top: 50px; }
-
 .skills {
   padding: 100px;
   background: #cfdfea; }
