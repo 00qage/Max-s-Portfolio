@@ -75,6 +75,6 @@ $('#hamburgermanu').click(function (e) {
     //background-position-y是背景用的
     // $('#contact').css('background-position-y', -(scrollPos /5) + 'px');
     //transform用於元素物件
-    $('.section-img-maintitle').css('transform', 'translateY('+-(scrollPos)+'px)');
+    // $('.section-img-maintitle').css('transform', 'translateY('+-(scrollPos)+'px)');
   });
 });
