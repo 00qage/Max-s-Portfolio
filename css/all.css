@@ -142,7 +142,8 @@ body {
 
 .skills {
   padding: 100px;
-  background: #cfdfea; }
+  background: #cfdfea;
+  background: #fff; }
   .skills i {
     padding-right: 5px; }
   .skills .skills-chart {
@@ -208,7 +209,8 @@ body {
 
 .portfolio {
   padding: 100px;
-  background: #123d5f; }
+  background: #123d5f;
+  background: #cfdfea; }
   .portfolio h2 {
     text-align: center; }
   .portfolio ul li {
@@ -228,7 +230,8 @@ body {
 
 .contact {
   padding: 100px;
-  background: #0c273b; }
+  background: #0c273b;
+  background: #123d5f; }
   .contact h2 {
     text-transform: uppercase;
     text-align: center; }

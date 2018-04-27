@@ -142,6 +142,7 @@ body {
 .skills {
     padding: 100px;
     background: rgb(207, 223, 234);
+    background: #fff;
     i {
         // font-size: 18px;
         padding-right: 5px;
@@ -207,6 +208,7 @@ body {
 .portfolio {
     padding: 100px;
     background: rgb(18, 61, 95);
+    background: rgb(207, 223, 234);
     h2 {
         text-align: center;
     }
@@ -228,7 +230,8 @@ body {
 
 .contact {
     padding: 100px;
-    background: rgb(12, 39, 59); // background: url('https://subtlepatterns.com/patterns/restaurant_icons.png') ;
+    background: rgb(12, 39, 59);
+    background: rgb(18, 61, 95);
     h2 {
         text-transform: uppercase;
         text-align: center;
