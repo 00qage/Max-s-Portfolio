@@ -58,6 +58,7 @@ $('#hamburgermanu').click(function (e) {
 
       $('#skills .skills-chart-bar').each(function () {
         let thisValue = $(this).data('progress');
+        // $(this).css('height', thisValue + '%');
         $(this).animate({
           height: thisValue + '%'
         }, 1000);

@@ -144,12 +144,15 @@ body {
   padding: 100px;
   background: #cfdfea;
   background: #fff; }
+  @media (max-width: 568px) {
+    .skills {
+      padding: 50px 0; } }
   .skills i {
     padding-right: 5px; }
   .skills .skills-chart {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 350px;
     border-left: 2px solid #777;
     border-bottom: 2px solid #777;
     -webkit-box-sizing: border-box;
@@ -209,8 +212,10 @@ body {
 
 .portfolio {
   padding: 100px;
-  background: #123d5f;
   background: #cfdfea; }
+  @media (max-width: 568px) {
+    .portfolio {
+      padding: 50px 0px; } }
   .portfolio h2 {
     text-align: center; }
   .portfolio ul li {
@@ -232,13 +237,18 @@ body {
   padding: 100px;
   background: #0c273b;
   background: #123d5f; }
+  @media (max-width: 568px) {
+    .contact {
+      padding: 50px 20px; } }
   .contact h2 {
     text-transform: uppercase;
     text-align: center; }
-  .contact .contact-list i {
-    padding-right: 10px; }
-  .contact .contact-list p {
-    font-size: 20px; }
+  .contact .contact-list {
+    margin: 0 0 20px 0; }
+    .contact .contact-list i {
+      padding-right: 10px; }
+    .contact .contact-list p {
+      font-size: 20px; }
   .contact .contact-form .contact-form-button {
     margin-top: 10px; }
 
