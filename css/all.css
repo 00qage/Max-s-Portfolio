@@ -47,25 +47,64 @@ body {
 
 .header {
   position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 10; }
-  .header .h7 {
-    height: 70px; }
-  .header .bg-info {
-    opacity: 0.8; }
+  width: 100%;
+  z-index: 10;
+  opacity: 0.8; }
+  @media (max-width: 568px) {
+    .header {
+      position: absolute;
+      padding: 0 20px;
+      border-bottom: 1px solid #fff; } }
   .header .header-box {
-    width: 1024px;
+    max-width: 1024px;
     height: 70px; }
     .header .header-box .name {
       font-size: 20px; }
       .header .header-box .name a {
         text-decoration: none; }
 
+.menu-show .d-md-flex {
+  max-height: 260px; }
+
+.header-menu .header-menu-hamburger-icon {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center; }
+  @media (max-width: 568px) {
+    .header-menu .header-menu-hamburger-icon {
+      display: inline-block; } }
+  .header-menu .header-menu-hamburger-icon i {
+    color: #fff;
+    font-size: 25px; }
+
+@media (max-width: 568px) {
+  .header-menu ul {
+    max-height: 260px;
+    overflow: hidden;
+    -webkit-transition: max-height .6s;
+    -o-transition: max-height .6s;
+    transition: max-height .6s;
+    position: absolute;
+    z-index: 1;
+    top: 71px;
+    left: 0;
+    right: 0;
+    float: right;
+    display: none;
+    border-bottom: 1px solid #fff; } }
+
 .header-menu ul li a {
   color: #fff;
   text-decoration: none;
   padding: 24.5px; }
+  @media (max-width: 568px) {
+    .header-menu ul li a {
+      display: block;
+      text-align: center; } }
   .header-menu ul li a:hover, .header-menu ul li a:active, .header-menu ul li a:focus {
     background-color: rgba(0, 0, 0, 0.05); }
   .header-menu ul li a.active {
@@ -75,36 +114,36 @@ body {
 .section-img {
   overflow: hidden;
   height: 1000px;
-  width: 100%;
   background: url("images/landscape1.jpg");
   background-position: top center;
   background-size: cover;
   background-attachment: fixed; }
+  @media (max-width: 568px) {
+    .section-img {
+      width: 100%;
+      height: 768px;
+      background: url("images/Mountain-pictures-1024.jpg") no-repeat;
+      background-position: top center; } }
   .section-img .section-img-maintitle {
     width: 100%;
     padding: 20px 0;
     background: rgba(255, 255, 255, 0.7); }
+    @media (max-width: 568px) {
+      .section-img .section-img-maintitle {
+        padding: 10px 0; } }
     .section-img .section-img-maintitle .maintitle {
       color: #123d5f;
       font-size: 100px;
       text-align: center;
       text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4); }
-
-.about {
-  padding: 100px;
-  background: white; }
-  .about .about-title {
-    text-align: center;
-    color: #123d5f;
-    font-size: 50px; }
-  .about .about-content {
-    width: 50%;
-    color: #123d5f;
-    margin-top: 50px; }
+      @media (max-width: 568px) {
+        .section-img .section-img-maintitle .maintitle {
+          font-size: 50px; } }
 
 .skills {
   padding: 100px;
-  background: #cfdfea; }
+  background: #cfdfea;
+  background: #fff; }
   .skills i {
     padding-right: 5px; }
   .skills .skills-chart {
@@ -170,11 +209,12 @@ body {
 
 .portfolio {
   padding: 100px;
-  background: #123d5f; }
+  background: #123d5f;
+  background: #cfdfea; }
   .portfolio h2 {
     text-align: center; }
   .portfolio ul li {
-    margin: 0 30px 1% 1%; }
+    margin: 0 1% 30px 1%; }
     .portfolio ul li img {
       max-width: 100%;
       height: 200px;
@@ -190,7 +230,8 @@ body {
 
 .contact {
   padding: 100px;
-  background: #0c273b; }
+  background: #0c273b;
+  background: #123d5f; }
   .contact h2 {
     text-transform: uppercase;
     text-align: center; }

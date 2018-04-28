@@ -1,6 +1,13 @@
 $(document).ready(function () {
 
+  //hamburger manu
+$('#hamburgermanu').click(function (e) { 
+  e.preventDefault();
+  // $('body').delay(500).toggleClass('menu-show');
+  $('.header-menu ul').slideToggle(600);
+});
 
+//scroll
   var showSkill = false;
 
   $('.scrollTop').click(function (e) {
@@ -64,5 +71,10 @@ $(document).ready(function () {
         $(this).addClass('fadeIn');
       }
     });
+    // bg scroll
+    //background-position-y是背景用的
+    // $('#contact').css('background-position-y', -(scrollPos /5) + 'px');
+    //transform用於元素物件
+    // $('.section-img-maintitle').css('transform', 'translateY('+-(scrollPos)+'px)');
   });
 });
