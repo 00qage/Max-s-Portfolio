@@ -81,4 +81,10 @@ $('#hamburgermanu').click(function (e) {
     //transform用於元素物件
     // $('.section-img-maintitle').css('transform', 'translateY('+-(scrollPos)+'px)');
   });
+
+  //gotop 置頂
+  $('.top').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({scrollTop:0},800);
+  });
 });

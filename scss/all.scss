@@ -27,9 +27,8 @@ body {
     z-index: 10;
     opacity: 0.8;
     @include iphone {
-        
         padding: 0 20px;
-        border-bottom:1px solid #fff;
+        border-bottom: 1px solid #fff;
     }
     .header-box {
         max-width: 1024px;
@@ -42,10 +41,12 @@ body {
         }
     }
 }
+
 //hamburger menu
-.menu-show .d-md-flex{
+.menu-show .d-md-flex {
     max-height: 260px;
 }
+
 .header-menu {
     .header-menu-hamburger-icon {
         display: none;
@@ -67,8 +68,7 @@ body {
         @include iphone {
             max-height: 260px;
             overflow: hidden;
-            transition: max-height .6s;
-            // margin-top: 1px;
+            transition: max-height .6s; // margin-top: 1px;
             position: absolute;
             z-index: 1;
             top: 71px;
@@ -76,7 +76,7 @@ body {
             right: 0;
             float: right;
             display: none;
-            border-bottom:1px solid #fff;
+            border-bottom: 1px solid #fff;
         }
         li {
             a {
@@ -94,7 +94,7 @@ body {
                 }
                 &.active {
                     box-shadow: 0 -3px 0 $brand-accent inset;
-                    @include iphone{
+                    @include iphone {
                         box-shadow: none;
                     }
                 }
@@ -111,32 +111,31 @@ body {
 
 .section-img {
     overflow: hidden;
-    height: 1000px;
-    // width: 100%;
+    height: 1000px; // width: 100%;
     background: url("images/landscape1.jpg");
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    @include iphone{
+    @include iphone {
         width: 100%;
         height: 768px;
         background: url('images/Mountain-pictures-1024.jpg') no-repeat;
-        background-position:top center;
+        background-position: top center;
     }
     .section-img-maintitle {
         width: 100%;
         padding: 20px 0;
         background: rgba(255, 255, 255, 0.7);
-        @include iphone{
+        @include iphone {
             padding: 10px 0;
-            }
+        }
         .maintitle {
             color: rgb(18, 61, 95);
             font-size: 100px;
             text-align: center;
             text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4);
-            @include iphone{
-            font-size: 50px;
+            @include iphone {
+                font-size: 50px;
             }
         }
     }
@@ -146,8 +145,8 @@ body {
     padding: 100px;
     background: rgb(207, 223, 234);
     background: #fff;
-    @include iphone{
-        padding:50px 0;
+    @include iphone {
+        padding: 50px 0;
     }
     i {
         // font-size: 18px;
@@ -212,12 +211,11 @@ body {
 }
 
 .portfolio {
-    padding: 100px;
-    // background: rgb(18, 61, 95);
+    padding: 100px; // background: rgb(18, 61, 95);
     background: rgb(207, 223, 234);
     background-color: #17a2b8;
-    @include iphone{
-        padding:50px 0px;
+    @include iphone {
+        padding: 50px 0px;
     }
     h2 {
         text-align: center;
@@ -239,12 +237,11 @@ body {
 }
 
 .contact {
-    padding: 100px;
-    // background: rgb(12, 39, 59);
+    padding: 100px; // background: rgb(12, 39, 59);
     background: rgb(18, 61, 95);
     background-color: #137e8f;
-    @include iphone{
-        padding:50px 20px;
+    @include iphone {
+        padding: 50px 20px;
     }
     h2 {
         text-transform: uppercase;
@@ -263,17 +260,17 @@ body {
     }
     .contact-form {
         width: 60%;
-        @include iphone{
+        @include iphone {
             width: 100%;
         }
-        form > input {
+        form>input {
             width: 100%;
             height: 35px;
             margin-bottom: 15px;
             padding: 0 10px;
             border-radius: 5px;
         }
-        textarea{
+        textarea {
             height: 150px;
             border-radius: 5px;
             padding: 0 10px;
@@ -297,6 +294,41 @@ body {
 }
 
 .footer {
-    // height: 70px;
+    padding: 50px;
     background-color: #0c4149;
+    text-align: center;
+    a {
+        i {
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+    .footer-Social {
+        margin: 20px 0;
+        a {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            display: inline-block;
+            background: #fff;
+            border-radius: 10px;
+            &:hover {
+                transform: rotateZ(360deg);
+                -webkit-transform: rotateZ(360deg);
+                /* Safari 和 Chrome */
+                -moz-transform: rotateZ(360deg);
+                border-radius: 50%;
+                background:$brand-accent;
+                transition: all  1.5s;
+            }
+            i {
+                font-size: 30px;
+                line-height: 50px;
+                color: #0c4149;
+            }
+        }
+    }
+    p{
+        color: #fff;
+    }
 }
