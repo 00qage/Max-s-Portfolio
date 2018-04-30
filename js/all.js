@@ -83,8 +83,8 @@ $('#hamburgermanu').click(function (e) {
   });
 
   //gotop 置頂
-  $('.top').click(function (e) { 
-    e.preventDefault();
-    $('html,body').animate({scrollTop:0},800);
-  });
+  // $('.top').click(function (e) { 
+  //   e.preventDefault();
+  //   $('html,body').animate({scrollTop:0},800);
+  // });
 });
