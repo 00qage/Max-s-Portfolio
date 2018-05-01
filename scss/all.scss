@@ -318,8 +318,8 @@ body {
                 /* Safari 和 Chrome */
                 -moz-transform: rotateZ(360deg);
                 border-radius: 50%;
-                background:$brand-accent;
-                transition: all  1.5s;
+                background: $brand-accent;
+                transition: all 1.5s;
             }
             i {
                 font-size: 30px;
@@ -328,7 +328,31 @@ body {
             }
         }
     }
-    p{
+    p {
         color: #fff;
+    }
+}
+
+//nivoSlider用
+.theme-default {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.nivoSlider {
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    transition: all 1s;
+    &:hover {
+        position: relative;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        img {
+            transition: all 1s;
+            transform: rotateZ(5deg);
+        }
     }
 }

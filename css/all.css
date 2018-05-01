@@ -311,12 +311,37 @@ body {
         -moz-transform: rotateZ(360deg);
         border-radius: 50%;
         background: #ffc14e;
-        -webkit-transition: all  1.5s;
-        -o-transition: all  1.5s;
-        transition: all  1.5s; }
+        -webkit-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s; }
       .footer .footer-Social a i {
         font-size: 30px;
         line-height: 50px;
         color: #0c4149; }
   .footer p {
     color: #fff; }
+
+.theme-default {
+  width: 400px;
+  margin: 0 auto; }
+
+.nivoSlider {
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .nivoSlider:hover {
+    position: relative;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; }
+    .nivoSlider:hover img {
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      -webkit-transform: rotateZ(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotateZ(5deg); }
