@@ -220,6 +220,13 @@ body {
     h2 {
         text-align: center;
     }
+    hr {
+        // border: 0;
+        height: 4px;
+        width: 50px;
+        margin: 30px auto;
+        background: #fff;
+    }
     ul {
         li {
             margin: 0 1% 30px 1%;

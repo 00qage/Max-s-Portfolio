@@ -222,6 +222,11 @@ body {
       padding: 50px 0px; } }
   .portfolio h2 {
     text-align: center; }
+  .portfolio hr {
+    height: 4px;
+    width: 50px;
+    margin: 30px auto;
+    background: #fff; }
   .portfolio ul li {
     margin: 0 1% 30px 1%; }
     .portfolio ul li img {
