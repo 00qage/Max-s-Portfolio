@@ -52,7 +52,6 @@ body {
   opacity: 0.8; }
   @media (max-width: 568px) {
     .header {
-      position: absolute;
       padding: 0 20px;
       border-bottom: 1px solid #fff; } }
   .header .header-box {
@@ -110,6 +109,10 @@ body {
   .header-menu ul li a.active {
     -webkit-box-shadow: 0 -3px 0 #ffc14e inset;
     box-shadow: 0 -3px 0 #ffc14e inset; }
+    @media (max-width: 568px) {
+      .header-menu ul li a.active {
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
 
 .section-img {
   overflow: hidden;
@@ -144,12 +147,15 @@ body {
   padding: 100px;
   background: #cfdfea;
   background: #fff; }
+  @media (max-width: 568px) {
+    .skills {
+      padding: 50px 0; } }
   .skills i {
     padding-right: 5px; }
   .skills .skills-chart {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 350px;
     border-left: 2px solid #777;
     border-bottom: 2px solid #777;
     -webkit-box-sizing: border-box;
@@ -209,10 +215,18 @@ body {
 
 .portfolio {
   padding: 100px;
-  background: #123d5f;
-  background: #cfdfea; }
+  background: #cfdfea;
+  background-color: #17a2b8; }
+  @media (max-width: 568px) {
+    .portfolio {
+      padding: 50px 0px; } }
   .portfolio h2 {
     text-align: center; }
+  .portfolio hr {
+    height: 4px;
+    width: 50px;
+    margin: 30px auto;
+    background: #fff; }
   .portfolio ul li {
     margin: 0 1% 30px 1%; }
     .portfolio ul li img {
@@ -230,18 +244,38 @@ body {
 
 .contact {
   padding: 100px;
-  background: #0c273b;
-  background: #123d5f; }
+  background: #123d5f;
+  background-color: #137e8f; }
+  @media (max-width: 568px) {
+    .contact {
+      padding: 50px 20px; } }
   .contact h2 {
     text-transform: uppercase;
     text-align: center; }
-  .contact .contact-list i {
-    padding-right: 10px; }
-  .contact .contact-list p {
-    font-size: 20px;
-    line-height: 2; }
-  .contact .contact-form .contact-form-button {
-    margin-top: 10px; }
+  .contact .contact-list {
+    margin: 0 0 20px 0; }
+    .contact .contact-list i {
+      padding-right: 10px; }
+    .contact .contact-list p {
+      font-size: 20px;
+      line-height: 2; }
+  .contact .contact-form {
+    width: 60%; }
+    @media (max-width: 568px) {
+      .contact .contact-form {
+        width: 100%; } }
+    .contact .contact-form form > input {
+      width: 100%;
+      height: 35px;
+      margin-bottom: 15px;
+      padding: 0 10px;
+      border-radius: 5px; }
+    .contact .contact-form textarea {
+      height: 150px;
+      border-radius: 5px;
+      padding: 0 10px; }
+    .contact .contact-form .contact-form-button {
+      margin-top: 10px; }
 
 .animated {
   opacity: 0;
@@ -259,5 +293,60 @@ body {
   transform: translateY(0); }
 
 .footer {
-  height: 70px;
-  background: #000; }
+  padding: 50px;
+  background-color: #0c4149;
+  text-align: center; }
+  .footer a i {
+    font-size: 40px;
+    color: #fff; }
+  .footer .footer-Social {
+    margin: 20px 0; }
+    .footer .footer-Social a {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      display: inline-block;
+      background: #fff;
+      border-radius: 10px; }
+      .footer .footer-Social a:hover {
+        -ms-transform: rotate(360deg);
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        /* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);
+        border-radius: 50%;
+        background: #ffc14e;
+        -webkit-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s; }
+      .footer .footer-Social a i {
+        font-size: 30px;
+        line-height: 50px;
+        color: #0c4149; }
+  .footer p {
+    color: #fff; }
+
+.theme-default {
+  width: 400px;
+  margin: 0 auto; }
+
+.nivoSlider {
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .nivoSlider:hover {
+    position: relative;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; }
+    .nivoSlider:hover img {
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      -webkit-transform: rotateZ(5deg);
+      -ms-transform: rotate(5deg);
+      transform: rotateZ(5deg); }
