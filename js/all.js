@@ -91,12 +91,12 @@ $(document).ready(function () {
   //Nivo slider
   $(window).on('load', function () {
     $('#slider').nivoSlider({
-      effect: 'fold', // Specify sets like: 'fold,fade,sliceDown' 
+      effect: 'fade', // Specify sets like: 'fold,fade,sliceDown' 
       slices: 15, // For slice animations 
       boxCols: 8, // For box animations 
       boxRows: 4, // For box animations 
       animSpeed: 500, // Slide transition speed 
-      pauseTime: 3000, // How long each slide will show 
+      pauseTime: 5000, // How long each slide will show 
       startSlide: 0, // Set starting Slide (0 index) 
       directionNav: false, // Next & Prev navigation 
       controlNav: true, // 1,2,3... navigation 
@@ -114,4 +114,18 @@ $(document).ready(function () {
     });
 
   });
+  //文字閃爍
+  var i = 0;
+
+  function blinker() {
+    if (i == 0) {
+      $('.blink').text('Welcome To My Work !!').fadeIn(800).delay(2000).fadeOut(800);
+      i = i + 1;
+    } else {
+      $('.blink').text('Web Design - UI Design - FrontEnd Development').fadeIn(800).delay(2000).fadeOut(800);
+      i = i - 1;
+    }
+  }
+  setInterval(blinker, 4000);
+
 });

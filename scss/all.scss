@@ -105,13 +105,18 @@ body {
 
 //secton start
 .section {
-    // height: 6000px;
-    // width: 1000px;
+    hr {
+        // border: 0;
+        height: 4px;
+        width: 50px;
+        margin: 30px auto;
+        background: $brand-accent;
+    }
 }
 
 .section-img {
     overflow: hidden;
-    height: 1000px; // width: 100%;
+    height: 100vh; // width: 100%;
     background: url("images/landscape1.jpg");
     background-position: top center;
     background-size: cover;
@@ -124,67 +129,63 @@ body {
     }
     .section-img-maintitle {
         width: 100%;
-        padding: 20px 0;
-        background: rgba(255, 255, 255, 0.7);
+        padding: 20px 0; // background: rgba(255, 255, 255, 0.7);
         @include iphone {
             padding: 10px 0;
         }
         .maintitle {
-            color: rgb(18, 61, 95);
-            font-size: 100px;
+            font-family: Helvetica, arial, Microsoft JhengHei, "微軟正黑體", sans-serif;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-size: 80px;
             text-align: center;
-            text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4);
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
             @include iphone {
                 font-size: 50px;
             }
+        }
+        p {
+            height: 30px;
+        }
+        .section-img-blink-text {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 1000;
+            color: #fff;
+            text-shadow: 2px 2px 5px #000;
         }
     }
 }
 
 .skills {
-    padding: 100px;
+    padding: 50px;
     background: rgb(207, 223, 234);
     background: #fff;
     @include iphone {
-        padding: 50px 0;
+        padding: 10px 0;
+    }
+    .skills-knowledge {
+        margin-left: 30%;
+        @include iphone {
+            margin-left: 25%;
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+        li {
+            margin: 20px 0;
+            line-height: 21px;
+            i {
+                color: $brand-accent;
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
     }
     i {
         // font-size: 18px;
         padding-right: 5px;
-    }
-    .skills-chart {
-        position: relative;
-        width: 100%;
-        height: 350px;
-        border-left: 2px solid #777;
-        border-bottom: 2px solid #777;
-        box-sizing: border-box;
-        .skills-chart-grid {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            box-sizing: border-box;
-            border: 1px dotted #777;
-            .skills-chart-grid-level {
-                font-weight: 900; // letter-spacing: -2px;
-                color: #777;
-                margin: -12px 0 0 -100px;
-            }
-        }
-        .skills-chart-bar {
-            position: absolute;
-            width: 6%;
-            bottom: 0;
-            background: linear-gradient($brand-accent, #ce7f00);
-            .skills-chart-bar-title {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                color: white;
-                transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-            }
-        }
     }
     .skills-progress {
         height: $progress-height;
@@ -219,13 +220,6 @@ body {
     }
     h2 {
         text-align: center;
-    }
-    hr {
-        // border: 0;
-        height: 4px;
-        width: 50px;
-        margin: 30px auto;
-        background: #fff;
     }
     ul {
         li {
@@ -344,6 +338,9 @@ body {
 .theme-default {
     width: 400px;
     margin: 0 auto;
+    @include iphone {
+        width: 300px;
+    }
 }
 
 .nivoSlider {
