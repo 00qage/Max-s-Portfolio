@@ -82,11 +82,11 @@ $(document).ready(function () {
     // $('.section-img-maintitle').css('transform', 'translateY('+-(scrollPos)+'px)');
   });
 
-  //gotop 置頂
-  // $('.top').click(function (e) { 
-  //   e.preventDefault();
-  //   $('html,body').animate({scrollTop:0},800);
-  // });
+ // gotop 置頂
+  $('.top').click(function (e) { 
+    e.preventDefault();
+    $('html,body').animate({scrollTop:0},1300);
+  });
 
   //Nivo slider
   $(window).on('load', function () {
